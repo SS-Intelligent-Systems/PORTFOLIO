@@ -9,9 +9,9 @@ export function DetailView() {
   const [resumeOpen, setResumeOpen] = useState(false);
 
   const avatarId = avatar?.id;
-  const resumeHref = avatarId === "Sanket"
+  const resumeHref = avatarId === "sanket"
     ? "/resume/sanket%20resume%20final%20(2).pdf"
-    : "resume\\Resume__updated.pdf";
+    : "/resume/shanu%20resume.pdf";
 
   const contactLinks = useMemo(() => {
     if (avatarId === "Shravanya") {
