@@ -21,7 +21,7 @@ export const AVATARS = {
   },
   female: {
     id: 'female',
-    photoPath: '/photos/shravanya%20andhale.png',
+    photoPath: '/photos/shravanya%20andhale%202.0.png',
     position: [2.5, 0, 0],
     name: 'Shravana Handley',
     title: 'AI Automation Engineer',

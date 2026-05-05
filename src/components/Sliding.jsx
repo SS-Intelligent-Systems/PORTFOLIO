@@ -689,8 +689,8 @@ function HackathonDetailView({ hack, onClose }) {
         {/* Grid Layout */}
         <div style={{
           position: "relative", zIndex: 1, display: "grid",
-          gridTemplateColumns: "1fr min(400px, 35vw) 1fr", gap: 32,
-          width: "100%", maxWidth: 1400, height: "80vh", alignItems: "center",
+          gridTemplateColumns: "1fr min(480px, 42vw) 1fr", gap: 32,
+          width: "100%", maxWidth: 1500, height: "86vh", alignItems: "center",
         }}>
           
           {/* LEFT CARDS */}

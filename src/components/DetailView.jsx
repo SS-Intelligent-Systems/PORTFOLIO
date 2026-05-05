@@ -132,11 +132,11 @@ export function DetailView() {
         position: "relative",
         zIndex: 1,
         display: "grid",
-        gridTemplateColumns: "1fr min(400px, 35vw) 1fr",
-        gap: 32,
+        gridTemplateColumns: "1fr min(460px, 40vw) 1fr",
+        gap: 36,
         width: "100%",
-        maxWidth: 1400,
-        height: "80vh",
+        maxWidth: 1560,
+        height: "86vh",
         alignItems: "center",
         perspective: 1500
       }}>
@@ -182,7 +182,8 @@ export function DetailView() {
           <motion.div className="center-photo" 
             style={{
               height: "100%",
-              maxHeight: 650,
+              maxHeight: 780,
+              width: "clamp(320px, 34vw, 520px)",
               background: "transparent",
               boxShadow: "none",
               border: "none", // Invisible borders
@@ -468,8 +469,8 @@ export function DetailView() {
 
 const cardStyle = (avatar) => ({
   background: "#000000",
-  borderRadius: 16,
-  padding: 24,
+  borderRadius: 18,
+  padding: 30,
   boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
   border: "1px solid rgba(255,255,255,0.05)",
   position: "relative",
@@ -478,7 +479,7 @@ const cardStyle = (avatar) => ({
 
 const titleStyle = (accent) => ({
   fontFamily: "var(--font-display)",
-  fontSize: 12,
+  fontSize: 13,
   letterSpacing: "0.2em",
   color: accent,
   marginBottom: 16,
@@ -491,14 +492,14 @@ const listStyle = {
   padding: 0,
   display: "flex",
   flexDirection: "column",
-  gap: 12
+  gap: 14
 };
 
 const listItemStyle = (accent) => ({
   display: "flex",
   alignItems: "flex-start",
   gap: 12,
-  fontSize: 14,
+  fontSize: 15,
   color: "rgba(255,255,255,0.7)",
   lineHeight: 1.4
 });

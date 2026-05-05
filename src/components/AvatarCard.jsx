@@ -44,8 +44,8 @@ export function AvatarCard({ avatar }) {
           style={{
             width: "100%",
             height: "100%",
-            objectFit: "cover",
-            objectPosition: "top",
+            objectFit: "contain",
+            objectPosition: "center",
           }} 
         />
       </div>

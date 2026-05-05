@@ -24,9 +24,9 @@ function useSliding3DTransforms(scrollerRef) {
         const abs = Math.min(1, Math.abs(dist) * 2);
 
         const rotateY = dist * -38;
-        const translateZ = 170 * (1 - abs);
-        const scale = 1 - abs * 0.18;
-        const opacity = 1 - abs * 0.55;
+        const translateZ = 220 * (1 - abs);
+        const scale = 1 - abs * 0.14;
+        const opacity = 1 - abs * 0.45;
 
         el.style.transform = `perspective(1400px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`;
         el.style.opacity = String(opacity);
@@ -56,8 +56,8 @@ function HackathonCard({ item }) {
       data-hackathon-card
       className="hack-card-outer"
       style={{
-        width: 360,
-        height: 240,
+        width: 420,
+        height: 280,
         flex: "0 0 auto",
         transformStyle: "preserve-3d",
         transition: "transform 220ms ease, opacity 220ms ease",
@@ -84,7 +84,7 @@ function HackathonCard({ item }) {
           style={{
             position: "absolute",
             inset: 0,
-            padding: 18,
+            padding: 22,
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
             display: "flex",
@@ -97,7 +97,7 @@ function HackathonCard({ item }) {
               style={{
                 margin: 0,
                 fontFamily: "var(--font-display)",
-                fontSize: 12,
+                fontSize: 13,
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
                 color: "rgba(255,255,255,0.45)",
@@ -108,7 +108,7 @@ function HackathonCard({ item }) {
             <span
               style={{
                 fontFamily: "monospace",
-                fontSize: 11,
+                fontSize: 12,
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
                 color: item.accent,
@@ -123,7 +123,7 @@ function HackathonCard({ item }) {
             style={{
               margin: 0,
               fontFamily: "var(--font-display)",
-              fontSize: 22,
+              fontSize: 26,
               letterSpacing: "0.02em",
               color: "var(--text)",
               lineHeight: 1.1,
@@ -132,7 +132,7 @@ function HackathonCard({ item }) {
             {item.name}
           </h3>
 
-          <p style={{ margin: 0, color: "rgba(255,255,255,0.62)", fontSize: 13, lineHeight: 1.45 }}>
+          <p style={{ margin: 0, color: "rgba(255,255,255,0.62)", fontSize: 14, lineHeight: 1.5 }}>
             {item.project}
           </p>
 
@@ -142,8 +142,8 @@ function HackathonCard({ item }) {
                 key={t}
                 style={{
                   fontFamily: "monospace",
-                  fontSize: 11,
-                  padding: "6px 10px",
+                  fontSize: 12,
+                  padding: "7px 12px",
                   borderRadius: 999,
                   border: `1px solid rgba(${item.accentRgb}, 0.2)`,
                   color: item.accent,
@@ -174,7 +174,7 @@ function HackathonCard({ item }) {
           style={{
             position: "absolute",
             inset: 0,
-            padding: 18,
+            padding: 22,
             transform: "rotateY(180deg)",
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
@@ -193,7 +193,7 @@ function HackathonCard({ item }) {
               fontFamily: "var(--font-display)",
               letterSpacing: "0.35em",
               textTransform: "uppercase",
-              fontSize: 11,
+              fontSize: 12,
               color: "rgba(255,255,255,0.45)",
             }}
           >
@@ -202,7 +202,7 @@ function HackathonCard({ item }) {
           <div
             style={{
               fontFamily: "Impact, sans-serif",
-              fontSize: 44,
+              fontSize: 52,
               lineHeight: 1,
               textTransform: "uppercase",
               color: item.accent,
@@ -211,7 +211,7 @@ function HackathonCard({ item }) {
           >
             {item.rank}
           </div>
-          <p style={{ margin: 0, color: "rgba(255,255,255,0.72)", fontSize: 13, lineHeight: 1.5 }}>
+          <p style={{ margin: 0, color: "rgba(255,255,255,0.72)", fontSize: 14, lineHeight: 1.5 }}>
             {item.rankNote}
           </p>
         </div>

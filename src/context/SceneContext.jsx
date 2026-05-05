@@ -23,7 +23,7 @@ export const AVATARS = {
   },
   shravanya: {
     id: "shravanya",
-    photo: "/photos/shravanya andhale.png",
+    photo: "/photos/shravanya andhale 2.0.png",
     name: "Shravanya Andhale",
     title: "AI Automation Engineer",
     side: "right",
